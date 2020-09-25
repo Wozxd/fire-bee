@@ -110,7 +110,7 @@ a {
 
 }
 .title {
-    color: rgb(160, 255, 192);
+    color: rgb(0, 255, 242);
     font-size: 1.3em;
     font-weight: 700;
     margin-bottom: 20px;
@@ -119,6 +119,7 @@ a {
 }
 .title > i{
     margin-left: -15px;
+    color: red;
 }
 
 .title_word{
@@ -136,4 +137,23 @@ a {
     margin-left: -10px;
 }
 
-@media only screen and (max-width: 639px) and (min-width: 320px) {}
+@media only screen and (max-width: 639px) and (min-width: 320px) {
+    /* swaper区域 */
+    .swaper{
+        height: 600px;
+    }
+    .swaper_word{
+        font-size: 2em;
+    }
+    .join_me{
+        margin-top:100px;
+    }
+    /* 简介页面 */
+    .word_box{
+        font-size: 1em;
+        width: 220px;
+    }
+
+
+
+}
