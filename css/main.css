@@ -37,10 +37,11 @@ a {
 .swaper {
     /* background-image: url(https://i.loli.net/2020/09/11/jMhdIgl2XsaEiYD.jpg); */
     width: 100%;
-    height: 1200px;
+    height: 1080px;
     /* 背景颜色的渐变 */
     background-color: #531717;
-    background-image: radial-gradient(rgb(88, 9, 9), rgb(0, 0, 0)); /* 标准的语法（必须放在最后） */
+    background-image: url(../img/bg_top.png);
+    /* 标准的语法（必须放在最后） */
 }
 
 .content {
@@ -61,40 +62,50 @@ a {
 
 
 }
-.join_box{
-    height: 55px;
-    width: 175px;
+
+.join_box {
+    height: 60px;
+    width: 200px;
     background-color: rgb(19, 4, 4);
     border: 1px solid white;
-    border-radius: 35px;
+    border-radius: 30px;
     text-align: center;
     margin: 5px auto;
-    line-height: 45px;
-    
+    line-height: 60px;
+
 }
+
 /* 简介页面 */
 .Why_Popular {
-    background-color: #531717;
-    padding-top: 30px;
-    
+    background-color: #030101;
+    background-image: url(../img/bg1.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
 }
-.popular_word{
+
+.popular_word {
 
     text-align: center;
     position: relative;
 
 }
-.word_box{
+
+.word_box {
     font-size: 2em;
     color: rgb(255, 255, 255);
-    font-style: italic;  
+    font-style: italic;
     position: relative;
     width: 450px;
-    z-index: 999;
+    z-index: 998;
     margin: 0px auto;
     text-align: center;
 }
-.word_box::after{
+
+/* 下面的横线 */
+.word_bottom::after {
     content: " ";
     position: absolute;
     left: 0;
@@ -104,31 +115,35 @@ a {
     margin-top: 1em;
     z-index: -1;
 }
+
 .popular_content {
     margin-top: 30px;
 
 
 }
+
 .title {
     color: rgb(0, 255, 242);
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 700;
     margin-bottom: 20px;
     margin-top: 50px;
     position: relative;
 }
-.title > i{
+
+.title>i {
     margin-left: -15px;
-    color: red;
+    color: #DB003D;
 }
 
-.title_word{
+.title_word {
     color: rgb(212, 211, 211);
     position: relative;
     font-size: 1em;
-    width: 60%;
+    width: 90%;
 }
-.title_word::before{
+
+.title_word::before {
     content: "";
     position: absolute;
     background-color: whitesmoke;
@@ -137,23 +152,285 @@ a {
     margin-left: -10px;
 }
 
+.conclusion {
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.conclusion_word {
+    font-size: 1em;
+    color: rgb(0, 255, 242);
+    font-style: initial;
+
+}
+
+/* 蜂窝数据界面 */
+.cellular {
+    background-image: radial-gradient(rgb(88, 9, 9), rgb(0, 0, 0));
+    background-image: url(../img/bg2.png);
+    /* 标准的语法（必须放在最后） */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 1080px;
+    display: block;
+}
+
+.cellualr_word {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    position: relative;
+    width: 200px;
+    z-index: 998;
+    margin: 0px auto;
+    text-align: center;
+}
+
+/* 画六边形 */
+.hexagon,
+.hexagon2,
+.hexagon3,
+.hexagon4,
+.hexagon5 {
+    position: relative;
+    width: 200px;
+    height: 346.4px;
+}
+
+.hexagon {
+
+    /* 左右居中 */
+    margin: 170px auto 10px auto;
+    background-color: #D8003C;
+}
+.hexagon:before,
+.hexagon2:before,
+.hexagon3:before,
+.hexagon4:before,
+.hexagon5:before{
+    content: '';
+    display: block;
+    right: 200px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 173.2px 100px;
+    border-style: solid;
+}
+.hexagon:after,
+.hexagon2:after,
+.hexagon3:after,
+.hexagon4:after,
+.hexagon5:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 200px;
+    border-width: 173.2px 100px;
+    border-style: solid;
+    top: 0;
+}
+.hexagon:before {
+    border-color: transparent #D8003C transparent transparent;
+}
+
+.hexagon:after {
+    border-color: transparent transparent transparent #D8003C;
+}
+
+/* 第二个六边形 */
+.hexagon2 {
+
+    /* 左右居中 */
+    /* margin: 10px auto; */
+    left: 210%;
+    transform: translateX(100%);
+    background-color: #4D0116;
+
+}
+
+.hexagon2:before {
+    border-color: transparent #4D0116 transparent transparent;
+}
+
+.hexagon2:after {
+    border-color: transparent transparent transparent#4D0116;
+}
+
+/* 第三个六边形 */
+
+.hexagon3 {
+
+    /* 左右居中 */
+    /* margin: 10px auto; */
+    right: 210%;
+    transform: translateX(-100%);
+    background-color: #4D0116;
+    top: -100%;
+}
+
+.hexagon3:before {
+    border-color: transparent #4D0116 transparent transparent;
+}
+
+.hexagon3:after {
+    border-color: transparent transparent transparent #4D0116;
+}
+
+/* 第四个六边形 */
+.hexagon4 {
+
+    /* 左右居中 */
+    /* margin: 10px auto; */
+    right: 155%;
+    transform: translateY(-50%);
+    background-color: #4D0116;
+    top: -99%;
+}
+
+.hexagon4:before {
+    border-color: transparent #4D0116 transparent transparent;
+}
+
+.hexagon4:after {
+    border-color: transparent transparent transparent #4D0116;
+}
+
+/* 画第五个六边形 */
+.hexagon5 {
+
+    /* 左右居中 */
+    /* margin: 130px auto 10px auto; */
+    right: 155%;
+    top: 51%;
+    background-color: #4D0116;
+}
+
+.hexagon5:before {
+    border-color: transparent #4D0116 transparent transparent;
+}
+
+.hexagon5:after {
+    border-color: transparent transparent transparent #4D0116;
+    top: 0;
+}
+
+.invita_id,
+.balance,
+.matrix,
+.invita_id {
+    position: absolute;
+    width: 200px;
+}
+
+.invita_id {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.balance {
+    top: 10%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+
+.usdt,
+.wdc {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.usdt_sum,
+.wdc_sum {
+    font-size: 30px;
+    color: #00FFDB;
+    font-weight: 800;
+}
+
+
+
+.matrix {
+    top: 65%;
+    text-align: center;
+
+}
+
+.f3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    left: 0%;
+    transform: translateX(-30%);
+
+}
+
+.f3_sum {
+    color: #00FFDB;
+}
+
+.f3 span,
+.f3_sum span {
+    color: thistle;
+}
+
+.f6 {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    right: 0px;
+    transform: translateX(30%);
+    z-index: 1;
+
+}
+
+/* 玩法介绍栏 */
+.play {
+    padding-top: 50px;
+    display: block;
+}
+
+.play_content {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: 490px;
+    margin: 0px auto;
+
+
+}
+
 @media only screen and (max-width: 639px) and (min-width: 320px) {
+
     /* swaper区域 */
-    .swaper{
+    .swaper {
         height: 600px;
     }
-    .swaper_word{
+
+    .swaper_word {
         font-size: 2em;
     }
-    .join_me{
-        margin-top:100px;
+
+    .join_me {
+        margin-top: 100px;
     }
+
     /* 简介页面 */
-    .word_box{
+    .word_box {
         font-size: 1em;
         width: 220px;
     }
-
 
 
 }
