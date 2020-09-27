@@ -14,10 +14,11 @@ var questione = new Vue({
     el: "#question",
     data() {
         return {
-            show1:"question_list_word",
-            show2:"question_list_word2",
+            if_show:[
+                false,false,false, false,false,
+                false,false,false,false,false,
+            ],
 
-            if_show: false,
             // end: "",
 
             question_list_head: [
@@ -47,25 +48,29 @@ var questione = new Vue({
         }
     },
     methods: {
-        show: function () {
-            // Vue.set(this.if_show, i, true);
-            // this.end = this.if_show[i];
-            this.if_show = true;
-            console.log(this.if_show)
-        },
-        dishow: function () {
-            // Vue.set(this.if_show, i, false)
-            // console.log(i)
-            this.if_show = false;
-            console.log(this.if_show)
-
-
-
-
+        show:function(i) {
+            Vue.set(this.if_show,i,! this.if_show[i]);
+            console.log("fsdafds")
         }
+
 
 
     }
 
+
+})
+// 蜂窝数据接口，以后可能是使用AJAX传递数据
+var cellular = new Vue({
+    el:"#cellular",
+    data () {
+        return {
+            id:2343,
+            usdt:2343,
+            wdc:2343,
+        }
+    },
+    methods:{
+
+    },
 
 })

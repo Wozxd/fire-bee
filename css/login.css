@@ -1,0 +1,164 @@
+body {
+    background-image: url(../img/login_bg.png);
+    background-size: cover;
+}
+
+
+a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+a:active {
+    text-decoration: none;
+}
+/* 获得焦点的时候 鼠标松开时显示的颜色*/
+a:focus {
+    text-decoration: none;
+}
+
+.word_bottom::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.5em;
+    background-color: #DC003E;
+    z-index: -1;
+    bottom: 0px;
+}
+
+
+.head {
+    font-size: 30pt;
+    font-weight: bold;
+    position: relative;
+    margin: 64pt auto 32pt auto;
+    width: 126pt;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.login_head {
+    font-size: 11pt;
+    margin-top: 19.5pt;
+    color: rgb(255, 255, 255);
+
+}
+
+.access {
+    margin-top: 58pt;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+}
+
+.login {
+    width: 290pt;
+    height: 380pt;
+    margin: auto;
+    text-align: center;
+    border: #43000A solid 4px;
+    border-radius: 20pt;
+    background-color: #43000acc;
+}
+
+.login_authorization {
+    color: red;
+    font-weight: 800px;
+    font-size: 1em;
+    margin-top: 20.5pt;
+
+}
+.login_authorization a{
+    color: red;
+}
+
+.pro {
+    margin-top: 21pt;
+    color: rgb(255, 255, 255);
+    font-size: 9pt;
+    font-weight: normal;
+
+}
+
+.check {
+    margin-top: 29pt;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 12pt;
+
+}
+
+.login_button {
+    margin-top: 10pt;
+}
+
+.login_button button {
+    margin-top: 16pt;
+    width: 65pt;
+    height: 30pt;
+    border-radius: 15pt;
+    border: none;
+    background-color: #540018;
+    color: rgb(255, 255, 255);
+}
+.login_button input {
+    width: 200pt;
+    height: 30pt;
+    border-radius: 15pt;
+    background-color: #220008;
+    border: none;
+    color: rgb(97, 97, 97);
+    padding-left: 10pt;
+}
+.buttom {
+    width: 200px;
+    margin: auto;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 20pt;
+    background-color: #ff004893;
+    border:#FF0048 solid 3px ;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.buttom a{
+    color: white;
+}
+.copyright {
+    color: #E60040;
+    font-size: 12px;
+    height: 12px;
+    text-align: center;
+
+    width: 207pt;
+    margin: 20px auto 44px auto;
+
+}
+
+
+@media only screen and (max-width: 639px) and (min-width: 320px) {
+    .login{
+        width: 90%;
+        /* box-shadow: ; */
+    }
+
+
+
+}

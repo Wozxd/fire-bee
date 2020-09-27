@@ -3,7 +3,13 @@ a {
     text-decoration: none !important;
 
 }
-.index_2{
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.index_2 {
     z-index: 2;
 }
 
@@ -29,7 +35,7 @@ a {
 
 
 .navbar {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -39,6 +45,9 @@ a {
 
 .navbar li {
     margin-right: 40px;
+    padding-left: 25px;
+    margin-top: 10px;
+
 }
 
 /* 占位的合作元素 */
@@ -54,7 +63,7 @@ a {
     width: 100%;
     height: 1080px;
     /* 背景颜色的渐变 */
-    background-color: #531717;
+    background-color: #300000f3;
     background-image: url(../img/bg_top.png);
     /* 标准的语法（必须放在最后） */
 }
@@ -89,19 +98,22 @@ a {
     line-height: 60px;
 
 }
-.join_box1{
+
+.join_box1 {
     background-color: rgba(207, 207, 207, 0.253);
     border: 2px solid rgba(207, 207, 207, 0.253);
 
 }
-.join_box2{
+
+.join_box2 {
     background-color: rgba(255, 0, 0, 0.253);
     border: 2px solid rgba(207, 207, 207, 0.253);
     box-shadow: 0px 0px 40px #ff3b3b7e;
 
 
 }
-.join_box3{
+
+.join_box3 {
     background-color: rgba(0, 255, 42, 0.253);
     border: 2px solid rgba(207, 207, 207, 0.253);
 
@@ -189,14 +201,15 @@ a {
 
 /* 蜂窝数据界面 */
 .cellular {
-    background-image: url(../img/bg2.png);
+    background-image: url(../img/bg_2.png);
+    background-color: #000000;
+
     /* 标准的语法（必须放在最后） */
     padding-top: 50px;
     padding-bottom: 20px;
     height: 900px;
     display: block;
     background-size: cover
-
 }
 
 .cellualr_word {
@@ -228,15 +241,16 @@ a {
     /* 左右居中 */
     margin: 200px auto 10px auto;
     background-color: #D8003C;
-    
+
 }
+
 .hexagon:before,
 .hexagon2:before,
 .hexagon3:before,
 .hexagon4:before,
 .hexagon5:before,
 .hexagon6:before,
-.hexagon7:before{
+.hexagon7:before {
     content: '';
     display: block;
     right: 200px;
@@ -246,6 +260,7 @@ a {
     border-width: 173.2px 100px;
     border-style: solid;
 }
+
 .hexagon:after,
 .hexagon2:after,
 .hexagon3:after,
@@ -263,6 +278,7 @@ a {
     border-style: solid;
     top: 0;
 }
+
 .hexagon:before {
     border-color: transparent #D8003C transparent transparent;
 }
@@ -348,10 +364,11 @@ a {
     top: 0;
 }
 
-.hexagon6{
+.hexagon6 {
     top: -103%;
     background-color: #4D0116;
 }
+
 .hexagon6:before {
     border-color: transparent #4D0116 transparent transparent;
 }
@@ -361,10 +378,11 @@ a {
     top: 0;
 }
 
-.hexagon7{
+.hexagon7 {
     top: -103%;
     background-color: #4D0116;
 }
+
 .hexagon7:before {
     border-color: transparent #4D0116 transparent transparent;
 }
@@ -456,9 +474,10 @@ a {
     padding-top: 50px;
     display: block;
     padding-bottom: 50px;
-    
+
     background-color: rgb(5, 5, 5);
     background-image: url(../img/bg_3.png);
+    background-size: cover
 }
 
 .play_content {
@@ -472,11 +491,12 @@ a {
 
 }
 
-.play_list{
+.play_list {
     margin-top: 100px;
 
 }
-.list_head{
+
+.list_head {
     font-size: 22px;
     font-weight: 800;
     position: relative;
@@ -484,31 +504,37 @@ a {
     color: rgb(255, 255, 255);
     z-index: 0;
 }
+
 .list_word {
     margin-top: 16px;
     font-size: 18px;
     font-weight: 400;
     color: white;
 }
+
 .list_two,
-.list_three{
+.list_three {
     margin-top: 88px;
 }
+
 .list_img {
     font-size: 16px;
 }
+
 .two_img img,
-.three_img img{
+.three_img img {
     transform: translateX(-100%) translateY(20%);
 }
+
 /* 各种问题解析界面 */
 .question {
     padding-top: 50px;
     padding-bottom: 80px;
     background-image: url(../img/bg_4.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover
 }
+
 .question_head {
     font-size: 40px;
     font-weight: 800;
@@ -524,9 +550,11 @@ a {
 .question_list {
     margin-top: 100px;
 }
-.question_list_plus{
+
+
+.question_list_plus {
     margin-top: 40px;
-    padding-left: 150px;
+    /* padding-left: 150px; */
     color: white;
 }
 
@@ -547,7 +575,7 @@ a {
     background-color: #ffffff;
     z-index: -1;
     bottom: -10px;
-    
+
 }
 
 
@@ -556,29 +584,24 @@ a {
     font-weight: 400;
     font-size: 16px;
     color: white;
+    opacity: 1;
+    transition: opacity 1s;
 }
-.question_list_word2 {
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 16px;
-    color: white;
-    visibility: hidden;
-}
+
+
 
 
 /* 结语部分 */
-.end{
+.end {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: url(../img/bg_5.png);
     margin-top: -0.1em;
     background-size: cover
-
-
-
 }
+
 .end_head_1,
-.end_head_2{
+.end_head_2 {
     position: relative;
     color: white;
     margin: 0px auto;
@@ -586,35 +609,41 @@ a {
     z-index: 0;
     text-align: center;
 }
-.end_head_1{
+
+.end_head_1 {
     width: 560px;
 }
+
 .head_1_word,
-.head_2_word{
+.head_2_word {
     width: 800px;
     color: white;
     font-size: 18px;
-    margin: 100px auto ;
+    margin: 100px auto;
 }
+
 .end_head_2 {
     width: 190px;
 
 }
+
 /* bottom */
-.bottom{
+.bottom {
     width: 100%;
     background-color: #1A0000;
     position: relative;
     height: 200px;
 
 }
-.bottom_logo{
+
+.bottom_logo {
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
     left: 10%;
 }
-.bottom_arrow{
+
+.bottom_arrow {
     color: white;
     position: absolute;
     right: 10%;
@@ -625,11 +654,12 @@ a {
     text-align: center;
     margin-top: -35px;
 }
-.bottom_arrow i{
+
+.bottom_arrow i {
     transform: translateY(50%);
 }
 
-.Copyright{
+.Copyright {
     position: absolute;
     right: 20%;
     color: white;
@@ -641,6 +671,7 @@ a {
 
 
 @media only screen and (max-width: 639px) and (min-width: 320px) {
+
 
     /* swaper区域 */
     .swaper {
@@ -656,10 +687,189 @@ a {
     }
 
     /* 简介页面 */
-    .word_box {
-        font-size: 1em;
-        width: 220px;
+    .popular_content .col-6 {
+        padding-left: 40px;
     }
 
+    .word_box {
+        font-size: 20px;
+        width: 285px;
+        font-weight: 700;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .title_word {
+        font-size: 16px;
+        width: 100%;
+        color: #e4e4e4;
+    }
+
+    .title_word::before {
+        content: "";
+        position: absolute;
+        background-color: rgba(245, 245, 245, 0);
+        height: 100px;
+        width: 2px;
+        margin-left: -10px;
+    }
+
+    .conclusion {
+        padding: 0px 8%;
+    }
+
+    /*  蜂窝数据界面 */
+    /* 画六边形 */
+    .cellular {
+        background-image: url(../img/bg_2.png);
+        background-color: #000000;
+        padding-top: 50px;
+        height: 630px;
+        display: block;
+        background-size: cover;
+    }
+
+    .hexagon {
+        margin-top: 80px;
+    }
+
+    .hexagon2,
+    .hexagon2::after,
+    .hexagon2::before,
+    .hexagon3,
+    .hexagon3::after,
+    .hexagon3::before,
+    .hexagon4,
+    .hexagon4::after,
+    .hexagon4::before,
+    .hexagon5,
+    .hexagon5::after,
+    .hexagon5::before,
+    .hexagon6,
+    .hexagon6::after,
+    .hexagon6::before,
+    .hexagon7,
+    .hexagon7::after,
+    .hexagon7::before {
+        display: none;
+    }
+
+
+    /* 玩法介绍界面 */
+    .play_content {
+        font-size: 20px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .play_list {
+        margin-top: 30px;
+    }
+
+    .list_head {
+        font-size: 18px;
+        text-align: center;
+        width: 135px;
+        margin-top: 30px;
+
+    }
+
+    .list_word {
+        font-size: 16px;
+        color: #dbdbdb;
+        display: block;
+
+    }
+
+    .list_two,
+    .list_three {
+        margin-top: 30px;
+    }
+
+    .two_img,
+    .three_img {
+        transform: translateX(0);
+        text-align: center;
+    }
+
+    .two_img img,
+    .three_img img {
+        transform: translateX(0);
+    }
+    .line_img {
+        width: 35px;
+    }
+
+    /* 问题解答界面 */
+    .question_head {
+        font-size: 24px;
+        width: 120px;
+    }
+
+    .question_list {
+        margin-top: 35px;
+    }
+
+    .question_list_plus {
+        margin-right: 0px;
+    }
+
+    .question_list_content {
+        padding-right: 10%;
+    }
+
+    .question_list_head::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        z-index: -1;
+        bottom: -10px;
+
+
+
+    }
+
+    /* 结语部分 */
+    .end {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+
+    .end_head_1,
+    .end_head_2 {
+        font-size: 20px;
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    .head_1_word,
+    .head_2_word {
+        font-size: 16px;
+        width: 80%;
+        margin: 50px auto;
+        color: #dddddd;
+    }
+
+    /* bottom */
+    .bottom {
+        height: 100px;
+    }
+
+    .bottom_logo img {
+        width: 100px;
+        left: 5px;
+        top: 70%;
+    }
+
+    .Copyright {
+        font-size: 12px;
+        right: 10px;
+        top: 70%;
+    }
 
 }
