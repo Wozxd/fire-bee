@@ -59,6 +59,12 @@ var questione = new Vue({
 
 
 })
+
+
+
+var Child = {
+    template: '<p>dhfiasdhfdshf</P>'
+  }
 // 蜂窝数据接口，以后可能是使用AJAX传递数据
 var cellular = new Vue({
     el:"#cellular",
@@ -72,5 +78,11 @@ var cellular = new Vue({
     methods:{
 
     },
+    components: {
+        // <runoob> 将只在父模板可用
+        'hexagon': Child
+      }
+    
+    
 
 })

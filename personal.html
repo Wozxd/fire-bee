@@ -15,12 +15,12 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <!-- 导航栏 -->
         <div class="head">
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a href="" class="navbar-brand">
-                    侧滑栏
+                <a href="" class="navbar-brand" @click.prevent='right'>
+                    <i class="fa fa-bars"></i>
                 </a>
                 <!-- 手机端的适配按钮 -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -50,7 +50,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">
-                                会员：{{人数}}
+                                会员：{{vip}}
                             </a>
                         </li>
                         <li class="nav-item">
@@ -65,138 +65,244 @@
         <!-- 单纯占位的盒子元素 -->
         <div class=" eg">
         </div>
+        <!-- 主要内容区域，个人详情页 -->
         <div class="content container-fliud">
-            <div class="row">
-                <div class="col-sm-3 content_left">
+            <div class="row" style="margin-left: 0px;margin-left:0px ;">
+                <div class="col-sm-2 content_left" ref="left">
                     <div class="content_head text-center">
-                        <div class="logo"></div>
+                        <div class="logo">
+                            <img src="../static/img/personal_logo.png" alt="">
+                        </div>
                         <div class="head_word">
                             FireBee
                         </div>
                         <div class="vip">
-                            会员：{{}}
+                            会员：{{vip_sum}}
                         </div>
                         <div class="id">
-                            邀请人：{{}}
+                            邀请人：{{wdc_sum}}
                         </div>
                     </div>
-                    <div class="income">
-                        <div class="income_sum">
-                            收入
+                    <div class="left_main">
+                        <div class="income">
+                            <div class="income_sum">
+                                收入:
+                                <br>
+                                <input type="text" value="forsage.io">
+                            </div>
+                        </div>
+                        <div class="exchange">
+                            <input type="text" class="ex_sum">
+                            <div class="countries" style="display: none;">
+                                <div class="">link</div>
+                                <div class="">link2</div>
+                                <div class="">link3</div>
+                            </div>
+
+                        </div>
+                        <div class="lower_level">
+                            <div class="level_sum">
+                                个人下线:
+                            </div>
+                            <input type="text" class="level_word">
+
+                        </div>
+                        <div class="wdc_waller">
+                            WDC钱包:
                             <br>
-                            <input type="text" value="forsage.io">
+                            <input type="text" class="wdc_address">
+                            <div class="wisdom_network">
+                                <a href="">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    访问Wisdom Chain
+                                </a>
+                                <a href="">
+                                    <div class="copy">
+                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                        复制</div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="exchange">
-                        <input type="text" class="ex_sum">
-                        <div class="countries" style="display: none;">
-                            <div class="">link</div>
-                            <div class="">link2</div>
-                            <div class="">link3</div>
-                        </div>
-
-                    </div>
-                    <div class="lower_level">
-                        <div class="level_sum">
-                            个人下线
-                        </div>
-                        <input type="text" class="level_word">
-
-                    </div>
-                    <div class="wdc_waller">
-                        <p>WDC钱包</p>
-                        <input type="text" class="wdc_address">
-                        <div class="wisdom_network">
+                        <div class="share">
+                            <div class="share_word"></div>
+                            <div class="share_link">
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="wisdom_network">
+                                <a href="">
+                                    生成邀请海报
+                                </a>
+                            </div>
                             <a href="">
-                                访问Wisdom Chain
-                            </a>
-                            <div class="copy">复制</div>
-                        </div>
-                    </div>
-                    <div class="share">
-                        <div class="share_word"></div>
-                        <div class="share_link">
-                            {{}}
-                        </div>
-                        <div class="wisdom_network">
-                            <a href="">
-                                生成邀请海报
+                                <div class="copy">
+                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                    复制</div>
                             </a>
                         </div>
-                        <div class="copy">复制</div>
-                    </div>
-                    <div class="overview">
-                        <div class="vip_sum">
-                            <p>{{}}</p>
-                            <br>
-                            <p>会员总数</p>
-                        </div>
-                        <div class="wdc_sum">
-                            {{}}
-                            <br>
-                            <p>WDC收益总额</p>
-                        </div>
-                    </div>
+                        <div class="share">
+                            <div class="share_word"></div>
+                            <div class="share_link">
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="wisdom_network">
+                                <a href="">
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    访问Wisdom Chain
 
+                                </a>
+                            </div>
+                            <a href="">
+                                <div class="copy">
+                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                    复制</div>
+                            </a>
+                        </div>
+                        <div class="overview text-center">
+                            <div class="vip_sum">
+                                <p>{{vip_sum}}</p>
+                                <span>会员总数</span>
+                            </div>
+                            <div class="wdc_sum">
+                                <p>{{wdc_sum}}</p>
+                                <span>WDC收益总额</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-9">
-                    <div class="top_overview row">
-                        <div class="col-sm-3">
+                <!-- 主要内容右边区域 -->
+                <div class="col-sm-10">
+                    <div class="top_overview row text-center" id="top_overview">
+                        <div class="col-sm-3 top_head">
                             <p>所有参与者</p>
-                            <div class="view_1"></div>
+                            <div class="view">{{a}}</div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 top_head">
                             <p>
                                 24小时内加入
                             </p>
-                            <div class="view_2"></div>
+                            <div class="view">{{a}}</div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 top_head">
                             <p>
                                 参与者已赚取USDT
                             </p>
-                            <div class="view_2"></div>
+                            <div class="view">{{a}}</div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 top_head">
                             <p>
                                 参与者已赚取WDC
                             </p>
-                            <div class="view_4"></div>
+                            <div class="view">{{a}}</div>
                         </div>
                     </div>
                     <div class="matrix">
-                        <div class="matrix_head">
-                            <div class="firebee"></div>
-                            <div class="recycle"></div>
+                        <div class="matrix_content">
+                            <div class="row" style="margin-left:0px;margin-right:0px;">
+                                <div class="matrix_head col-12">
+                                    <div class="firebee word_bottom">FireBee</div>
+                                    <div class="recycle float-right">
+                                        <a href="">
+                                            <span>已经完成{{flash}}/16&nbsp&nbsp<i class="fa fa-refresh"></i></span>
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-4 hexagon text-center">
+                                    <div class="cellular">
+                                        <div class="cellular">
+                                            <P class="float-left cellular1_num">1</P>
+                                            <a href="">
+                                                <img src="../static/img/cellular.png" alt="" class="cellular1_img">
+                                            </a>
+                                            <P class="cellular1_word">10WDC</P>
+                                            <p class="cellular1_ground"><i class="fa fa-users" aria-hidden="true"></i>34,234</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 这里做循环遍历接口数据 -->
+                                <div class="col-sm-3 col-4 hexagon text-center" v-for="(item,index) in hexagon">
+                                    <div class="cellular">
+                                        <P class="float-left cellular_num">{{item.id}}</P>
+                                        <a href="">
+                                            <img src="../static/img/up.png" alt="" class="cellular_img">
+                                        </a>
+                                        <P class="cellular_word">{{item.wdc}}WDC</P>
+                                    </div>
+                                </div>
+                                <div class="introduce1 col-sm-12">
+                                    <span><img src="../static/img/personal_1.png" alt=""></span>
+                                    邀请第一个人到达1号位置，收益100%进入你的去中心化钱包
+                                </div>
+                                <div class="introduce1 col-sm-12">
+                                    <span><img src="../static/img/personal_2.png" alt=""></span>
+                                    邀请第二个人到达2号位置，收益100%进入你的去中心化钱包
+                                </div>
+                                <div class="introduce1 col-sm-12">
+                                    <span><img src="../static/img/personal_cover.png" alt=""></span>
+                                    邀请第三个人到达，收益100%进入邀请你的人去中心化钱包，该矩阵也会被点亮并重置
+                                </div>
+                            </div>
                         </div>
-                        <!-- 这里做循环16次 -->
-                        <div class="col-sm-3">
-                        </div>
-                        <div class="introduce1"></div>
-                        <div class="introduce1"></div>
-                        <div class="introduce1"></div>
                     </div>
-                    <div class="matrix2">
-                        <div class="matrix_head">
-                            <div class="firebee"></div>
-                            <div class="recycle"></div>
+                    <div class="matrix">
+                        <div class="matrix_content">
+                            <div class="row" style="margin-left:0px;margin-right:0px;">
+                                <div class="matrix_head col-12">
+                                    <div class="firebee word_bottom">FireBee</div>
+                                    <div class="recycle float-right">
+                                        <a href="">
+                                            <span>已经完成{{flash}}/16&nbsp&nbsp<i class="fa fa-refresh"></i></span>
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-4 hexagon text-center">
+                                    <div class="cellular">
+                                        <div class="cellular">
+                                            <P class="float-left cellular1_num">1</P>
+                                            <a href="">
+                                                <img src="../static/img/cellular.png" alt="" class="cellular1_img">
+                                            </a>
+                                            <P class="cellular1_word">10WDC</P>
+                                            <p class="cellular1_ground"><i class="fa fa-users" aria-hidden="true"></i>34,234</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 这里做循环遍历接口数据 -->
+                                <div class="col-sm-3 col-4 hexagon text-center" v-for="(item,index) in hexagon">
+                                    <div class="cellular">
+                                        <P class="float-left cellular_num">{{item.id}}</P>
+                                        <a href="">
+                                            <img src="../static/img/up.png" alt="" class="cellular_img">
+                                        </a>
+                                        <P class="cellular_word">{{item.wdc}}WDC</P>
+                                    </div>
+                                </div>
+                                <div class="introduce1 col-sm-12">
+                                    <span><img src="../static/img/personal_1.png" alt=""></span>
+                                    邀请第一个人到达1号位置，收益100%进入你的去中心化钱包
+                                </div>
+                                <div class="introduce1 col-sm-12">
+                                    <span><img src="../static/img/personal_2.png" alt=""></span>
+                                    邀请第二个人到达2号位置，收益100%进入你的去中心化钱包
+                                </div>
+                                <div class="introduce1 col-sm-12">
+                                    <span><img src="../static/img/personal_cover.png" alt=""></span>
+                                    邀请第三个人到达，收益100%进入邀请你的人去中心化钱包，该矩阵也会被点亮并重置
+                                </div>
+                            </div>
                         </div>
-                        <!-- 这里做循环16次 -->
-                        <div class="col-sm-3">
-                        </div>
-                        <div class="introduce1"></div>
-                        <div class="introduce1"></div>
-                        <div class="introduce1"></div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
     <!-- 底部 -->
-    <!-- <div class="bottom">
+    <div class="bottom">
             <div class="bottom_logo">
-                <img src="../static/img/logo_bottom.png" alt="">
+                <!-- <img src="../static/img/logo_bottom.png" alt=""> -->
             </div>
             <div class="bottom_arrow">
                 <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
@@ -204,10 +310,10 @@
             <div class="Copyright">
                 版权 © 2020FireBee. 保留所有权利
             </div>
-        </div> -->
+        </div>
     </div>
     <script src=" ./js/vue/vue.js"></script>
-    <script src="./js/registered.js"></script>
+    <script src="./js/personal.js"></script>
 </body>
 
 </html>

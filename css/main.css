@@ -48,8 +48,9 @@ body {
     padding-left: 25px;
 
 }
-.nav-link{
-    color:white !important;
+
+.nav-link {
+    color: white !important;
 }
 
 /* 占位的合作元素 */
@@ -288,6 +289,7 @@ body {
 .hexagon:after {
     border-color: transparent transparent transparent #D8003C;
 }
+
 .red_hexagon {
     position: relative;
     width: 200px;
@@ -335,7 +337,7 @@ body {
     /* margin: 10px auto; */
     right: 155%;
     /* transform: translateY(-148%); */
-    top: -250%; 
+    top: -252%;
     background-color: #4D0116;
 }
 
@@ -351,7 +353,7 @@ body {
 .hexagon5 {
     left: 155%;
     background-color: #4D0116;
-    top: -351%;
+    top: -353%;
 }
 
 .hexagon5:before {
@@ -398,28 +400,27 @@ body {
 .hexagon4:hover,
 .hexagon5:hover,
 .hexagon6:hover,
-.hexagon7:hover
-{
-    background-color:#ce003a;
+.hexagon7:hover {
+    background-color: #ce003a;
 }
+
 .hexagon2:hover::before,
 .hexagon3:hover::before,
 .hexagon4:hover::before,
 .hexagon5:hover::before,
 .hexagon6:hover::before,
-.hexagon7:hover::before
-{
+.hexagon7:hover::before {
     border-color: transparent #ce003a transparent transparent;
 
 }
+
 .hexagon2:hover::after,
 .hexagon3:hover::after,
 .hexagon4:hover::after,
 .hexagon5:hover::after,
 .hexagon6:hover::after,
-.hexagon7:hover::after
-{
-    border-color: transparent transparent transparent #ce003a ;
+.hexagon7:hover::after {
+    border-color: transparent transparent transparent #ce003a;
 
 }
 
@@ -558,6 +559,17 @@ body {
 }
 
 /* 各种问题解析界面 */
+
+
+
+
+.list-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
 .question {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -733,7 +745,7 @@ body {
     }
 
     .title_word {
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
         color: #e4e4e4;
     }
@@ -749,6 +761,10 @@ body {
 
     .conclusion {
         padding: 0px 8%;
+    }
+
+    .list_img {
+        font-size: 14px;
     }
 
     /*  蜂窝数据界面 */
@@ -808,7 +824,7 @@ body {
     }
 
     .list_word {
-        font-size: 16px;
+        font-size: 14px;
         color: #dbdbdb;
         display: block;
 
@@ -829,6 +845,7 @@ body {
     .three_img img {
         transform: translateX(0);
     }
+
     .line_img {
         width: 35px;
     }
@@ -880,7 +897,7 @@ body {
 
     .head_1_word,
     .head_2_word {
-        font-size: 16px;
+        font-size: 14px;
         width: 80%;
         margin: 50px auto;
         color: #dddddd;

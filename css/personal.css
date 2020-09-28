@@ -1,3 +1,10 @@
+body *{
+
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', DengXian, SimSun, 'Segoe UI', Tahoma, Helvetica, sans-serif;
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei', SimSun, Tahoma, Arial, Helvetica, STHeiti;
+    font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
+}
+
 a {
     color: rgb(255, 255, 255);
     text-decoration: none !important;
@@ -19,10 +26,10 @@ body {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 0.5em;
-    background-color: #DC003E;
+    height: 30%;
+    background-color: #d4d4d4;
     z-index: -1;
-    bottom: 0px;
+    bottom: 20%;
 }
 
 /* head栏的样式规定 */
@@ -60,11 +67,287 @@ body {
     background-color: black;
 }
 
+/* 主要内容区域 */
+.content_head {
+    margin-top: 50px;
+}
+
+/* 左边个人中心区域 */
+.logo {
+    margin-bottom: 30px;
+}
+.content_left {
+    background-color: rgb(255, 217, 0);
+    width: 500px;
+    position: relative;
+    padding-bottom: 100px;
+    transition: all 0.6s ease;
+
+}
+
+.head_word {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.left_main,
+.overview {
+    width: 250px;
+    margin: auto;
+    position: relative;
+}
+
+.vip,
+.id {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.income {
+    margin-top: 20px;
+
+}
+
+.income_sum input,
+.ex_sum,
+.level_word,
+.wdc_address,
+.share_link input {
+    border-radius: 20px;
+    border: white solid 2px;
+    padding-left: 10px;
+    height: 45px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(255, 217, 0);
+}
+
+.lower_level {
+    margin-top: 50px;
+}
+
+.level_sum {
+    font-size: 16px;
+}
+
+.wdc_waller {
+    margin-top: 50px;
+}
+
+.share {
+    margin-top: 30px;
+}
+
+.wisdom_network {
+    font-size: 12px;
+    color: black;
+    display: inline-block;
+}
+
+.wisdom_network a {
+    color: black;
+}
+
+.copy {
+    font-size: 12px;
+    color: black;
+}
+
+.overview {
+    margin-top: 60px;
+}
+
+.copy {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+}
+
+/* 右边区域总览姐界面 */
+.overview {
+    border: rgb(255, 255, 255) solid 2px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.vip_sum p {
+    margin-top: 20px;
+    color: 30px;
+    font-weight: 800;
+}
+
+.vip_sum span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wdc_sum {
+    margin-top: 30px;
+}
+
+.wdc_sum p {
+    margin-top: 20px;
+    color: 30px;
+    font-weight: 800;
+}
+
+.wdc_sum span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 右边纵览区域 */
+.top_overview {
+    margin-top: 40px;
+}
+
+.top_head p {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.top_head .view {
+    color: rgb(255, 230, 0);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* 矩阵区域 */
+.matrix {
+    margin-top: 50px;
+    width: 100%;
+    padding: 20px;
+}
+
+.matrix_content {
+    margin: auto;
+    width: 95%;
+    background-color: rgb(255, 230, 0);
+    border-radius: 40px;
+
+}
+
+.firebee {
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    width: 150px;
+    z-index: 0;
+    font-weight: 800;
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+.recycle {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 20px;
+    margin-top: 30px;
+    display: inline-block;
+    color: rgb(51, 51, 51);
+}
+
+.recycle a {
+    color: rgb(36, 36, 36);
+
+}
+
+.recycle i {
+    color: rgb(36, 36, 36);
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20px;
+    line-height: 20px;
+
+}
+
+/* 六边形 */
+.cellular {
+    position: relative;
+    width: 150px;
+    height: 259.5px;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.cellular:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 150px;
+    border-width: 129px 75px;
+    border-style: solid;
+    border-color: transparent rgb(255, 255, 255) transparent transparent;
+}
+
+.cellular:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 150px;
+    border-width: 129px 75px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(255, 255, 255);
+    top: 0;
+}
+
+.cellular1_img {
+    margin-top: 40%;
+}
+
+.cellular1_word {
+    margin-top: 10%;
+    font-size: 16px;
+    color: #999999;
+    font-weight: bold;
+}
+
+.cellular1_ground {
+    font-size: 16px;
+    color: #252525;
+}
+
+.cellular_num,
+.cellular1_num{
+    font-size: 12px;
+    color: #999999;
 
 
+}
 
+.cellular_img {
+    margin-top: 60%;
+}
 
+.cellular_word {
+    margin-top: 50%;
+    font-size: 16px;
+    color: #999999;
+    font-weight: bold;
+}
 
+.introduce1 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+}
 
 
 
@@ -81,6 +364,7 @@ body {
     background-color: #1A0000;
     position: relative;
     height: 200px;
+    margin-top: 100px;
 
 }
 
@@ -141,7 +425,7 @@ body {
         left: 0;
         width: 100%;
         height: 0.5em;
-        background-color: #DC003E;
+        background-color: #ffffff;
         z-index: -1;
         bottom: 0px;
     }
@@ -174,48 +458,187 @@ body {
         color: white !important;
     }
 
+
+
+    .left_main {
+        width: 350px;
+        margin: auto;
+    }
+
     /* 占位的合作元素 */
     .eg {
         width: 100%;
         height: 56px;
         background-color: black;
     }
+
+    .firebee {
+        position: relative;
+        text-align: center;
+        font-size: 20px;
+        width: 100px;
+        z-index: 0;
+        font-weight: 800;
+        font-style: italic;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .recycle {
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        margin-right: 20px;
+        margin-top: 30px;
+        display: inline-block;
+        color: rgb(51, 51, 51);
+    }
+    .recycle i {
+        color: rgb(36, 36, 36);
+        width: 30px;
+        height: 20px;
+        background-color: white;
+        border-radius: 20px;
+        line-height: 20px;
+    
+    }
+
+    /* 下面的横线 */
+    .word_bottom::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-color: #d4d4d4;
+        z-index: -1;
+        bottom: 20%;
+    }
+
+    /* 画六边形 */
+
+    .cellular {
+        position: relative;
+        width: 40px;
+        height: 69.3px;
+        margin: 50px auto;
+        background-color: rgb(255, 255, 255);
+    }
+    .cellular:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 40px;
+        border-width: 34.6px 20px;
+        border-style: solid;
+        border-color: transparent rgb(255, 255, 255) transparent transparent;
+    }
+    .cellular:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 40px;
+        border-width: 34.6px 20px;
+        border-style: solid;
+        border-color: transparent transparent transparent rgb(255, 255, 255);
+        top: 0;
+    }
+    .cellular1_img {
+        margin-top: 0%;
+        width: 40px;
+        transform: translateY(-30%);
+    }
+    .cellular1_word {
+        margin-top: 10%;
+        font-size: 12px;
+        color: #999999;
+        font-weight: bold;
+    }
+    
+    .cellular1_ground {
+        font-size: 12px;
+        color: #252525;
+        font-weight: 600;
+        margin-top: -30%;
+
+    }
+    .cellular_num {
+        font-size: 12px;
+        color: #999999;
+    
+    
+    }
+    .cellular_img {
+        margin-top: 0%;
+        width: 40px;
+        transform: translateY(-30%);
+    }
+    .cellular_word {
+        margin-top: 0%;
+        font-size: 12px;
+        color: #999999;
+        font-weight: bold;
+    }
+
+    .introduce1 {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 12px;
+        color: rgb(37 37 37);
+        font-weight: 600;
+    }
+    .introduce1 img{
+        width: 27px;
+    }
+    /* 用来隐藏导航栏 */
+    /* 用来显示导航栏 */
+    .content_left {
+        background-color: rgb(255, 217, 0);
+        width: 100%;
+        transition: all 0.6s ease;
+
+        position: absolute;
+        padding-bottom: 100px;
+        z-index: 2;
+        transform: translateX(-120%);
+
+    }
+
+    .income_sum input,
+    .ex_sum,
+    .level_word,
+    .wdc_address,
+    .share_link input {
+        border-radius: 20px;
+        border: white solid 2px;
+        padding-left: 10px;
+        height: 45px;
+        margin-top: 20px;
+        width: 100%;
+        background-color: rgb(255, 217, 0);
+    }
+
+
+    .bottom {
+        height: 100px;
+    }
+
+    .bottom_logo img {
+        width: 100px;
+        left: 5px;
+        top: 70%;
+    }
+
+    .Copyright {
+        font-size: 12px;
+        right: 10px;
+        top: 70%;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
