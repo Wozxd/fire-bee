@@ -46,8 +46,10 @@ body {
 .navbar li {
     margin-right: 40px;
     padding-left: 25px;
-    margin-top: 10px;
 
+}
+.nav-link{
+    color:white !important;
 }
 
 /* 占位的合作元素 */
@@ -286,14 +288,17 @@ body {
 .hexagon:after {
     border-color: transparent transparent transparent #D8003C;
 }
+.red_hexagon {
+    position: relative;
+    width: 200px;
+    height: 346.4px;
+
+}
 
 /* 第二个六边形 */
 .hexagon2 {
 
-    /* 左右居中 */
-    /* margin: 10px auto; */
-    left: 210%;
-    transform: translateX(100%);
+    left: 310%;
     background-color: #4D0116;
 
 }
@@ -310,12 +315,9 @@ body {
 
 .hexagon3 {
 
-    /* 左右居中 */
-    /* margin: 10px auto; */
-    right: 210%;
-    transform: translateX(-100%);
+    right: 310%;
     background-color: #4D0116;
-    top: -100%;
+    top: -99%;
 }
 
 .hexagon3:before {
@@ -332,9 +334,9 @@ body {
     /* 左右居中 */
     /* margin: 10px auto; */
     right: 155%;
-    transform: translateY(-50%);
+    /* transform: translateY(-148%); */
+    top: -250%; 
     background-color: #4D0116;
-    top: -99%;
 }
 
 .hexagon4:before {
@@ -347,12 +349,9 @@ body {
 
 /* 画第五个六边形 */
 .hexagon5 {
-
-    /* 左右居中 */
-    /* margin: 130px auto 10px auto; */
-    right: 155%;
-    top: 51%;
+    left: 155%;
     background-color: #4D0116;
+    top: -351%;
 }
 
 .hexagon5:before {
@@ -365,7 +364,8 @@ body {
 }
 
 .hexagon6 {
-    top: -103%;
+    left: 155%;
+    top: -348%;
     background-color: #4D0116;
 }
 
@@ -379,7 +379,8 @@ body {
 }
 
 .hexagon7 {
-    top: -103%;
+    top: -447%;
+    right: 155%;
     background-color: #4D0116;
 }
 
@@ -390,6 +391,36 @@ body {
 .hexagon7:after {
     border-color: transparent transparent transparent #4D0116;
     top: 0;
+}
+
+.hexagon2:hover,
+.hexagon3:hover,
+.hexagon4:hover,
+.hexagon5:hover,
+.hexagon6:hover,
+.hexagon7:hover
+{
+    background-color:#ce003a;
+}
+.hexagon2:hover::before,
+.hexagon3:hover::before,
+.hexagon4:hover::before,
+.hexagon5:hover::before,
+.hexagon6:hover::before,
+.hexagon7:hover::before
+{
+    border-color: transparent #ce003a transparent transparent;
+
+}
+.hexagon2:hover::after,
+.hexagon3:hover::after,
+.hexagon4:hover::after,
+.hexagon5:hover::after,
+.hexagon6:hover::after,
+.hexagon7:hover::after
+{
+    border-color: transparent transparent transparent #ce003a ;
+
 }
 
 /* 邀请数据栏 */
