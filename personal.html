@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fire Bee-Forsage on Wisdom Chain</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/personal.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!-- 导航栏 -->
+        <div class="head">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a href="" class="navbar-brand">
+                    侧滑栏
+                </a>
+                <!-- 手机端的适配按钮 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                主页
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                链上信息查询
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                语言
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                会员：{{人数}}
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                推出登录
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- 单纯占位的盒子元素 -->
+        <div class=" eg">
+        </div>
+        <div class="content container-fliud">
+            <div class="row">
+                <div class="col-sm-3 content_left">
+                    <div class="content_head text-center">
+                        <div class="logo"></div>
+                        <div class="head_word">
+                            FireBee
+                        </div>
+                        <div class="vip">
+                            会员：{{}}
+                        </div>
+                        <div class="id">
+                            邀请人：{{}}
+                        </div>
+                    </div>
+                    <div class="income">
+                        <div class="income_sum">
+                            收入
+                            <br>
+                            <input type="text" value="forsage.io">
+                        </div>
+                    </div>
+                    <div class="exchange">
+                        <input type="text" class="ex_sum">
+                        <div class="countries" style="display: none;">
+                            <div class="">link</div>
+                            <div class="">link2</div>
+                            <div class="">link3</div>
+                        </div>
+
+                    </div>
+                    <div class="lower_level">
+                        <div class="level_sum">
+                            个人下线
+                        </div>
+                        <input type="text" class="level_word">
+
+                    </div>
+                    <div class="wdc_waller">
+                        <p>WDC钱包</p>
+                        <input type="text" class="wdc_address">
+                        <div class="wisdom_network">
+                            <a href="">
+                                访问Wisdom Chain
+                            </a>
+                            <div class="copy">复制</div>
+                        </div>
+                    </div>
+                    <div class="share">
+                        <div class="share_word"></div>
+                        <div class="share_link">
+                            {{}}
+                        </div>
+                        <div class="wisdom_network">
+                            <a href="">
+                                生成邀请海报
+                            </a>
+                        </div>
+                        <div class="copy">复制</div>
+                    </div>
+                    <div class="overview">
+                        <div class="vip_sum">
+                            <p>{{}}</p>
+                            <br>
+                            <p>会员总数</p>
+                        </div>
+                        <div class="wdc_sum">
+                            {{}}
+                            <br>
+                            <p>WDC收益总额</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-9">
+                    <div class="top_overview row">
+                        <div class="col-sm-3">
+                            <p>所有参与者</p>
+                            <div class="view_1"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <p>
+                                24小时内加入
+                            </p>
+                            <div class="view_2"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <p>
+                                参与者已赚取USDT
+                            </p>
+                            <div class="view_2"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            <p>
+                                参与者已赚取WDC
+                            </p>
+                            <div class="view_4"></div>
+                        </div>
+                    </div>
+                    <div class="matrix">
+                        <div class="matrix_head">
+                            <div class="firebee"></div>
+                            <div class="recycle"></div>
+                        </div>
+                        <!-- 这里做循环16次 -->
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="introduce1"></div>
+                        <div class="introduce1"></div>
+                        <div class="introduce1"></div>
+                    </div>
+                    <div class="matrix2">
+                        <div class="matrix_head">
+                            <div class="firebee"></div>
+                            <div class="recycle"></div>
+                        </div>
+                        <!-- 这里做循环16次 -->
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="introduce1"></div>
+                        <div class="introduce1"></div>
+                        <div class="introduce1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <!-- <div class="bottom">
+            <div class="bottom_logo">
+                <img src="../static/img/logo_bottom.png" alt="">
+            </div>
+            <div class="bottom_arrow">
+                <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="Copyright">
+                版权 © 2020FireBee. 保留所有权利
+            </div>
+        </div> -->
+    </div>
+    <script src=" ./js/vue/vue.js"></script>
+    <script src="./js/registered.js"></script>
+</body>
+
+</html>
