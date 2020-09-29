@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <!-- 导航栏 -->
         <div class="head">
             <nav class="navbar navbar-expand-md navbar-dark">
@@ -58,7 +58,7 @@
         <div class="swaper">
             <div class="content container">
                 <div class="swaper_word text-center">
-                    <p>一个全闭环</p>
+                    <a id="top"><p>一个全闭环</p></a>
                     <P>自动化执行的智能合约系统</P>
                 </div>
                 <div class="join_me container">
@@ -549,10 +549,12 @@
         </div>
         <!-- 底部 -->
         <div class="bottom">
-            <div class="bottom_logo">
-                <img src="../static/img/logo_bottom.png" alt="">
-            </div>
-            <div class="bottom_arrow">
+                <div class="bottom_logo">
+                    <img src="../static/img/logo_bottom.png" alt="">
+                </div>
+
+
+            <div class="bottom_arrow"  @click.prevent = "backtop()">
                 <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
             </div>
             <div class="Copyright">

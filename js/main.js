@@ -1,22 +1,11 @@
-// var app = new Vue({
-//     el: "",
-//     data () {
-
-//     },
-//     methods: {
-
-//     }
-// })
-
-
 // 问题解答界面
 var questione = new Vue({
-    el: "#question",
+    el: "#main",
     data() {
         return {
-            if_show:[
-                false,false,false, false,false,
-                false,false,false,false,false,
+            if_show: [
+                false, false, false, false, false,
+                false, false, false, false, false,
             ],
 
             // end: "",
@@ -44,45 +33,46 @@ var questione = new Vue({
                 "这取决于你的选择。你可以选择依次升级若干矩阵，或者只花10WDC开通一个矩阵，在获得收益之后，用收益去开通更多矩阵。",
                 "这取决于您的选择。您可以选择依次升级若干矩阵，或只花10WDC开通一个矩阵，在获得收益之后，用收益去开通更多矩阵。。",
                 "这个问题与FireBee 智能合约无关，取决于你自己是否想要把自己钱包里的钱兑换成法定货币。",
-            ]
+            ],
+            id: 2343,
+            usdt: 2343,
+            wdc: 2343,
         }
     },
     methods: {
-        show:function(i) {
-            Vue.set(this.if_show,i,! this.if_show[i]);
+        show: function (i) {
+            Vue.set(this.if_show, i, !this.if_show[i]);
             console.log("fsdafds")
+        },
+        backtop: function () {
+            var timer = setInterval(function () {
+                let osTop = document.documentElement.scrollTop || document.body.scrollTop;
+                let ispeed = Math.floor(-osTop / 5);
+                document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+                this.isTop = true;
+                if (osTop === 0) {
+                    clearInterval(timer);
+                }
+            }, 30)
         }
-
-
-
     }
-
-
 })
 
 
-
-var Child = {
-    template: '<p>dhfiasdhfdshf</P>'
-  }
 // 蜂窝数据接口，以后可能是使用AJAX传递数据
 var cellular = new Vue({
-    el:"#cellular",
-    data () {
-        return {
-            id:2343,
-            usdt:2343,
-            wdc:2343,
-        }
-    },
-    methods:{
+    el: "#cellular",
+    data: {
+
+        id: 2343,
+        usdt: 2343,
+        wdc: 2343,
 
     },
-    components: {
-        // <runoob> 将只在父模板可用
-        'hexagon': Child
-      }
-    
-    
+    methods: {
+
+    },
+
+
 
 })

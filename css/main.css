@@ -204,7 +204,7 @@ body {
 
 /* 蜂窝数据界面 */
 .cellular {
-    background-image: url(../img/bg_2.png);
+    background-image: url(../img/bg2.png);
     background-color: #000000;
 
     /* 标准的语法（必须放在最后） */
@@ -715,10 +715,19 @@ body {
 
 @media only screen and (max-width: 639px) and (min-width: 320px) {
 
-
+    .swaper {
+        /* background-image: url(https://i.loli.net/2020/09/11/jMhdIgl2XsaEiYD.jpg); */
+        width: 100%;
+        height: 1080px;
+        /* 背景颜色的渐变 */
+        background-color: #300000f3;
+        background-image: url(../img/bg_top.png);
+        /* 标准的语法（必须放在最后） */
+    }
     /* swaper区域 */
     .swaper {
         height: 600px;
+        background-image: url(../img/mobile_1.jpg);
     }
 
     .swaper_word {
@@ -770,7 +779,7 @@ body {
     /*  蜂窝数据界面 */
     /* 画六边形 */
     .cellular {
-        background-image: url(../img/bg_2.png);
+        background-image: url(../img/mobile_3.jpg);
         background-color: #000000;
         padding-top: 50px;
         height: 630px;

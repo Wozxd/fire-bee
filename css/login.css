@@ -158,6 +158,15 @@ a:focus {
         width: 90%;
         /* box-shadow: ; */
     }
+    .login {
+        width: 290pt;
+        height: 380pt;
+        margin: auto;
+        text-align: center;
+        border: #43000A solid 4px;
+        border-radius: 20pt;
+        background-color: #43000a;
+    }
 
 
 
