@@ -174,7 +174,8 @@
                     <div class="top_overview row text-center" id="top_overview">
                         <div class="col-sm-3 top_head">
                             <p>所有参与者</p>
-                            <div class="view">{{a}}</div>
+                            <div class="view">{{a}}
+                            </div>
                         </div>
                         <div class="col-sm-3 top_head">
                             <p>
@@ -328,6 +329,11 @@
             </div>
         </div>
     </div>
+    <template id="grow">
+        <p class="number_grow-warp">
+            <span ref="numberGrow" :data-time="time" class="number-grow" :data-value="value">0</span>
+        </p>
+    </template>
     <script src=" ./js/vue/vue.js"></script>
     <script src="./js/personal.js"></script>
 </body>

@@ -3,13 +3,14 @@ var questione = new Vue({
     el: "#main",
     data() {
         return {
+            // 这是问题列表控制参数
             if_show: [
                 false, false, false, false, false,
                 false, false, false, false, false,
             ],
 
             // end: "",
-
+            // 这是控制列表的文字内容
             question_list_head: [
                 "FireBee是什么？",
                 "谁拥有FireBee？",
@@ -22,6 +23,7 @@ var questione = new Vue({
                 "怎样才能开通更高级的矩阵？",
                 "怎样提取法定货币？"
             ],
+            // 控制的参数设置
             question_list_word: [
                 "FireBee目前是一个去中心化的智能合约，直接运行在区块链上。这个智能合约可以帮助你获得财富，100%拨出，没有风险.",
                 "FireBee不归任何人所有。它是通过智能合约创建的，可以为你提供最大的安全性和可持续性。智能合约是一种自动执行的算法。它存在于Wisdom Chain区块链网络中，实现了真正的去中心化。",
@@ -34,16 +36,20 @@ var questione = new Vue({
                 "这取决于您的选择。您可以选择依次升级若干矩阵，或只花10WDC开通一个矩阵，在获得收益之后，用收益去开通更多矩阵。。",
                 "这个问题与FireBee 智能合约无关，取决于你自己是否想要把自己钱包里的钱兑换成法定货币。",
             ],
+            // 蜂窝矩形界面的参数，接口出来之后就使用AJAX请求数据
             id: 2343,
             usdt: 2343,
             wdc: 2343,
         }
     },
+
     methods: {
+        // 控制列表是否显示
         show: function (i) {
             Vue.set(this.if_show, i, !this.if_show[i]);
             console.log("fsdafds")
         },
+        // 点击回到顶部按钮
         backtop: function () {
             var timer = setInterval(function () {
                 let osTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -54,25 +60,8 @@ var questione = new Vue({
                     clearInterval(timer);
                 }
             }, 30)
-        }
-    }
-})
-
-
-// 蜂窝数据接口，以后可能是使用AJAX传递数据
-var cellular = new Vue({
-    el: "#cellular",
-    data: {
-
-        id: 2343,
-        usdt: 2343,
-        wdc: 2343,
+        },
+        // 数据跳动增加
 
     },
-    methods: {
-
-    },
-
-
-
 })
