@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.compat.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/personal.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 </head>
 
 <body>
@@ -62,6 +66,7 @@
                 </div>
             </nav>
         </div>
+        
         <!-- 单纯占位的盒子元素 -->
         <div class=" eg">
         </div>
@@ -70,20 +75,20 @@
             <div class="row" style="margin-left: 0px;margin-left:0px ;">
                 <div class="col-sm-2 content_left" ref="left">
                     <div class="content_head text-center">
-                        <div class="logo">
+                        <div class="logo wow fadeInUp">
                             <img src="../static/img/personal_logo.png" alt="">
                         </div>
-                        <div class="head_word">
+                        <div class="head_word wow fadeInUp">
                             FireBee
                         </div>
-                        <div class="vip">
+                        <div class="vip wow fadeInUp">
                             会员：{{vip_sum}}
                         </div>
-                        <div class="id">
+                        <div class="id wow fadeInUp">
                             邀请人：{{wdc_sum}}
                         </div>
                     </div>
-                    <div class="left_main">
+                    <div class="left_main wow fadeInUp">
                         <div class="income">
                             <div class="income_sum">
                                 收入:
@@ -91,7 +96,7 @@
                                 <input type="text" value="forsage.io">
                             </div>
                         </div>
-                        <div class="exchange">
+                        <div class="exchange wow fadeInUp">
                             <input type="text" class="ex_sum">
                             <div class="countries" style="display: none;">
                                 <div class="">link</div>
@@ -100,14 +105,14 @@
                             </div>
 
                         </div>
-                        <div class="lower_level">
+                        <div class="lower_level wow fadeInUp">
                             <div class="level_sum">
                                 个人下线:
                             </div>
                             <input type="text" class="level_word">
 
                         </div>
-                        <div class="wdc_waller">
+                        <div class="wdc_waller wow fadeInUp">
                             WDC钱包:
                             <br>
                             <input type="text" class="wdc_address">
@@ -117,7 +122,7 @@
                                     访问Wisdom Chain
                                 </a>
                                 <a href="">
-                                    <div class="copy">
+                                    <div class="copy wow fadeInUp">
                                         <i class="fa fa-clipboard" aria-hidden="true"></i>
                                         复制</div>
                                 </a>
@@ -128,23 +133,23 @@
                             <div class="share_link">
                                 <input type="text" name="" id="">
                             </div>
-                            <div class="wisdom_network">
+                            <div class="wisdom_network wow fadeInUp">
                                 <a href="">
                                     生成邀请海报
                                 </a>
                             </div>
                             <a href="">
-                                <div class="copy">
+                                <div class="copy wow fadeInUp">
                                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                                     复制</div>
                             </a>
                         </div>
                         <div class="share">
-                            <div class="share_word"></div>
+                            <div class="share_word wow fadeInUp"></div>
                             <div class="share_link">
                                 <input type="text" name="" id="">
                             </div>
-                            <div class="wisdom_network">
+                            <div class="wisdom_network wow fadeInUp">
                                 <a href="">
                                     <i class="fa fa-link" aria-hidden="true"></i>
                                     访问Wisdom Chain
@@ -152,17 +157,17 @@
                                 </a>
                             </div>
                             <a href="">
-                                <div class="copy">
+                                <div class="copy wow fadeInUp">
                                     <i class="fa fa-clipboard" aria-hidden="true"></i>
                                     复制</div>
                             </a>
                         </div>
                         <div class="overview text-center">
-                            <div class="vip_sum">
+                            <div class="vip_sum wow fadeInUp">
                                 <p>{{vip_sum}}</p>
                                 <span>会员总数</span>
                             </div>
-                            <div class="wdc_sum">
+                            <div class="wdc_sum wow fadeInUp">
                                 <p>{{wdc_sum}}</p>
                                 <span>WDC收益总额</span>
                             </div>
@@ -170,26 +175,27 @@
                     </div>
                 </div>
                 <!-- 主要内容右边区域 -->
-                <div class="col-sm-10">
+                <div class="col-sm-10 content_right">
                     <div class="top_overview row text-center" id="top_overview">
-                        <div class="col-sm-3 top_head">
+                        <div class="col-sm-3 top_head wow fadeInUp">
                             <p>所有参与者</p>
                             <div class="view">{{a}}
                             </div>
                         </div>
-                        <div class="col-sm-3 top_head">
+                        
+                        <div class="col-sm-3 top_head wow fadeInUp">
                             <p>
                                 24小时内加入
                             </p>
                             <div class="view">{{a}}</div>
                         </div>
-                        <div class="col-sm-3 top_head">
+                        <div class="col-sm-3 top_head wow fadeInUp">
                             <p>
                                 参与者已赚取USDT
                             </p>
                             <div class="view">{{a}}</div>
                         </div>
-                        <div class="col-sm-3 top_head">
+                        <div class="col-sm-3 top_head wow fadeInUp">
                             <p>
                                 参与者已赚取WDC
                             </p>
@@ -208,7 +214,8 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 col-4 hexagon text-center">
+                                <!-- 用户X3主要显示界面 -->
+                                <div class="col-sm-3 col-4 hexagon text-center wow fadeInUp">
                                     <div class="cellular">
                                         <div class="cellular">
                                             <P class="float-left cellular1_num">1</P>
@@ -220,12 +227,13 @@
                                                     <img src="../static/img/wdc_coin.png" alt="">
                                                 </span>
                                             </P>
-                                            <p class="cellular1_ground"><i class="fa fa-users" aria-hidden="true"></i>34,234</p>
+                                            <p class="cellular1_ground"><i class="fa fa-users"
+                                                    aria-hidden="true"></i>34,234</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- 这里做循环遍历接口数据 -->
-                                <div class="col-sm-3 col-4 hexagon text-center" v-for="(item,index) in hexagon">
+                                <div class="col-sm-3 col-4 hexagon text-center wow fadeInUp" v-for="(item,index) in hexagon">
                                     <div class="cellular">
                                         <P class="float-left cellular_num">{{item.id}}</P>
                                         <a href="">
@@ -238,15 +246,15 @@
                                         </P>
                                     </div>
                                 </div>
-                                <div class="introduce1 col-sm-12">
+                                <div class="introduce1 col-sm-12 wow fadeInUp">
                                     <span><img src="../static/img/personal_1.png" alt=""></span>
                                     邀请第一个人到达1号位置，收益100%进入你的去中心化钱包
                                 </div>
-                                <div class="introduce1 col-sm-12">
+                                <div class="introduce1 col-sm-12 wow fadeInUp">
                                     <span><img src="../static/img/personal_2.png" alt=""></span>
                                     邀请第二个人到达2号位置，收益100%进入你的去中心化钱包
                                 </div>
-                                <div class="introduce1 col-sm-12">
+                                <div class="introduce1 col-sm-12 wow fadeInUp">
                                     <span><img src="../static/img/personal_cover.png" alt=""></span>
                                     邀请第三个人到达，收益100%进入邀请你的人去中心化钱包，该矩阵也会被点亮并重置
                                 </div>
@@ -265,7 +273,8 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 col-4 hexagon text-center">
+                                <!-- 这是用户目前状态显示界面 -->
+                                <div class="col-sm-3 col-4 hexagon text-center wow fadeInUp">
                                     <div class="cellular">
                                         <div class="cellular">
                                             <P class="float-left cellular1_num">1</P>
@@ -277,12 +286,13 @@
                                                     <img src="../static/img/wdc_coin.png" alt="">
                                                 </span>
                                             </P>
-                                            <p class="cellular1_ground"><i class="fa fa-users" aria-hidden="true"></i>34,234</p>
+                                            <p class="cellular1_ground"><i class="fa fa-users"
+                                                    aria-hidden="true"></i>34,234</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- 这里做循环遍历接口数据 -->
-                                <div class="col-sm-3 col-4 hexagon text-center" v-for="(item,index) in hexagon">
+                                <div class="col-sm-3 col-4 hexagon text-center wow fadeInUp" v-for="(item,index) in hexagon">
                                     <div class="cellular">
                                         <P class="float-left cellular_num">{{item.id}}</P>
                                         <a href="">
@@ -295,44 +305,41 @@
                                         </P>
                                     </div>
                                 </div>
-                                <div class="introduce1 col-sm-12">
+                                <div class="introduce1 col-sm-12 wow fadeInUp">
                                     <span><img src="../static/img/personal_1.png" alt=""></span>
                                     邀请第一个人到达1号位置，收益100%进入你的去中心化钱包
                                 </div>
-                                <div class="introduce1 col-sm-12">
+                                <div class="introduce1 col-sm-12 wow fadeInUp">
                                     <span><img src="../static/img/personal_2.png" alt=""></span>
                                     邀请第二个人到达2号位置，收益100%进入你的去中心化钱包
                                 </div>
-                                <div class="introduce1 col-sm-12">
+                                <div class="introduce1 col-sm-12 wow fadeInUp">
                                     <span><img src="../static/img/personal_cover.png" alt=""></span>
                                     邀请第三个人到达，收益100%进入邀请你的人去中心化钱包，该矩阵也会被点亮并重置
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
     <!-- 底部 -->
-    <div class="bottom">
-            <div class="bottom_logo">
-                <!-- <img src="../static/img/logo_bottom.png" alt=""> -->
-            </div>
-            <div class="bottom_arrow">
-                <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
-            </div>
-            <div class="Copyright">
-                版权 © 2020FireBee. 保留所有权利
-            </div>
+    <div class="bottom" id="bottom">
+        <div class="bottom_logo">
+            <img src="../static/img/logo_bottom.png" alt="">
+        </div>
+        <div class="bottom_arrow" @click.prevent="backtop()">
+            <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="Copyright">
+            版权 © 2020FireBee. 保留所有权利
         </div>
     </div>
-    <template id="grow">
-        <p class="number_grow-warp">
-            <span ref="numberGrow" :data-time="time" class="number-grow" :data-value="value">0</span>
-        </p>
+    
+    <template>
+        <countTo :startVal='startVal' :endVal='endVal' :duration='duration'></countTo>
     </template>
     <script src=" ./js/vue/vue.js"></script>
     <script src="./js/personal.js"></script>

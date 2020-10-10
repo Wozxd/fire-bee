@@ -1,3 +1,9 @@
+// wow使用
+wow = new WOW({
+    animateClass: 'animated',
+});
+wow.init();
+
 // 问题解答界面
 var questione = new Vue({
     el: "#main",
@@ -61,7 +67,8 @@ var questione = new Vue({
                 }
             }, 30)
         },
-        // 数据跳动增加
+
 
     },
+
 })

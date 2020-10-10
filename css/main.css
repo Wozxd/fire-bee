@@ -97,7 +97,7 @@ body {
     width: 200px;
     border-radius: 30px;
     text-align: center;
-    margin: 5px auto;
+    margin: 10px auto;
     line-height: 60px;
 
 }
@@ -733,6 +733,15 @@ body {
     .swaper_word {
         font-size: 2em;
     }
+    .swaper_word p{
+        font-size: .8em;
+    }
+    .join_box1,
+    .join_box2,
+    .join_box3{
+        width: 150px;
+    }
+
 
     .join_me {
         margin-top: 100px;
@@ -779,7 +788,7 @@ body {
     /*  蜂窝数据界面 */
     /* 画六边形 */
     .cellular {
-        background-image: url(../img/mobile_3.jpg);
+        background-image: url(../img/bg2.png);
         background-color: #000000;
         padding-top: 50px;
         height: 630px;
