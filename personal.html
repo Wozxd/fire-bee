@@ -296,7 +296,8 @@
                                     <div class="cellular">
                                         <P class="float-left cellular_num">{{item.id}}</P>
                                         <a href="">
-                                            <img src="../static/img/up.png" alt="" class="cellular_img">
+                                            <!-- 循环数据获取是否显示那个图片，考虑使用二元式直接动态判断 -->
+                                            <img :src="imgsrc" alt="" class="cellular_img">
                                         </a>
                                         <P class="cellular_word">{{item.wdc}}
                                             <span>

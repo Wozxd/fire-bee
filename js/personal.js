@@ -7,6 +7,7 @@ wow.init();
 var top_view = new Vue({
     el: "#main",
     data: {
+        imgsrc:"../static/img/up.png",
         a: 234324,
         flag: true,
         // 十六个矩阵的数据，后期通过接口调用,不晓得是什么接口
@@ -64,26 +65,6 @@ var top_view = new Vue({
                 id: 12,
                 level: 12,
                 wdc: 10240
-            },
-            {
-                id: 13,
-                level: 13,
-                wdc: 20480
-            },
-            {
-                id: 14,
-                level: 14,
-                wdc: 40960
-            },
-            {
-                id: 15,
-                level: 15,
-                wdc: 81920
-            },
-            {
-                id: 16,
-                level: 16,
-                wdc: 163840
             },
         ],
         flash: 1,

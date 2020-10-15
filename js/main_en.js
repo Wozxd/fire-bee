@@ -1,4 +1,4 @@
-// wow初始化，配合animate使用
+// wow初始化，配合animate使用，做滚动过渡动画
 wow = new WOW({
     animateClass: 'animated',
 });
