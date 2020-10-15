@@ -1,8 +1,11 @@
-// wow使用
+// wow初始化，配合animate使用
 wow = new WOW({
     animateClass: 'animated',
 });
 wow.init();
+
+
+
 
 // 问题解答界面
 var questione = new Vue({
@@ -67,8 +70,6 @@ var questione = new Vue({
                 }
             }, 30)
         },
-
-
     },
 
 })
