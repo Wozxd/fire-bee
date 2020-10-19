@@ -8,6 +8,8 @@ a {
 html,
 body {
     overflow-x: hidden;
+    font-family: 'Sailec-Bold','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif';
+
 }
 
 .index_2 {

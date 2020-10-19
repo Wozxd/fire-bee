@@ -5,6 +5,8 @@
 body {
     background-image: url(../img/login_bg.png);
     background-size: cover;
+    font-family: 'Sailec-Bold','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif';
+
 }
 
 
